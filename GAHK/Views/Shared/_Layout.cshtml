@@ -11,42 +11,61 @@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <link href="~/Scripts/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="~/Content/magnific-popup/magnific-popup.css" rel="stylesheet">
 
 
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 
-    <!-- Creative styles (edited)-->
-
-    <link href="~/Content/Creative/creative.css" rel="stylesheet">
+    <link href="~/Content/Semantic/semantic.min.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
 
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 </head>
 
 
 
-<body id="page-top">
+<body id="">
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-fixed-top navbar-expand-lg navbar-light" data-spy="affix">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">G.A Hagemanns Kollegium</a>
-                <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
+    <div class="pusher">
+        <div class="following bar">
+            <div class="ui container">
+                <div class="ui large secondary network menu inverted">
+                    <div class="item">
+                        <div class="active ui side">
+                            <img class="ui image" src="~/Files/Images/gahk_logo_small.png" />
+                        </div>
 
-                <ul class="nav pull-right navbar-nav">
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                </ul>
+                    </div>
+
+                    <div class="right menu inverted">
+                        <div class="item">
+                            <a href="Hey">Historie</a>
+                        </div>
+                        <div class="item">
+                            <a href="Hey">Vision</a>
+                        </div>
+                        <div class="item">
+                            <a href="Hey">Kollegielivet</a>
+                        </div>
+                        <div class="item">
+                            <a href="Hey">Faciliteter</a>
+                        </div>
+                        <div class="item">
+                            <a href="Hey">Opptagelse</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+
+
         </div>
-    </nav>
-    <!--Body-->
-    @RenderBody()
+
+        <!--Body-->
+        @RenderBody()
+    </div>
 
 
     <!-- DO WE WWANT A FOOTER?! NO!!!!
@@ -58,15 +77,20 @@
 
 
 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    
     <script src="~/Scripts/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="~/Scripts/jquery-easing/jquery.easing.min.js"></script>
-    <script src="~/Scripts/scrollreveal/scrollreveal.min.js"></script>
-    <script src="~/Scripts/magnific-popup/jquery.magnific-popup.min.js"></script>
+  
 
-    <!-- Creative template scripts -->
-    <script src="~/Scripts/Creative/creative.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="~/Content/jquery-easing/jquery.easing.min.js></script>
+    <script src="~/Content/scrollreveal/scrollreveal.min.js"></script>
+    <script src="~/Content/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="~/Content/Semantic/semantic.min.js"></script>
+
+   
+
+
 </body>
 </html>
