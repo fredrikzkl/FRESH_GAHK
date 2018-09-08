@@ -103,6 +103,10 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Creative\creative.css" />
+    <Content Include="Content\Creative\creative.js" />
+    <Content Include="Content\Creative\creative.min.css" />
+    <Content Include="Content\Creative\creative.min.js" />
     <Content Include="Content\Semantic\components\accordion.css" />
     <Content Include="Content\Semantic\components\accordion.js" />
     <Content Include="Content\Semantic\components\accordion.min.css" />
@@ -252,6 +256,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Files\Images\gahk_logo_small.png" />
     <Content Include="Files\Images\main.jpg" />
+    <Content Include="Files\Portfolio\3.jpg" />
     <Content Include="Files\Portfolio\bilder.jpg" />
     <Content Include="Files\Portfolio\legater.jpg" />
     <Content Include="Files\Portfolio\faciliter.jpg" />

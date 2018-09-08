@@ -11,7 +11,7 @@
         }
     });
 
-    $(".portfolio-box").dimmer({
+    $(".blurring .image").dimmer({
         on: 'hover'
     });
 
