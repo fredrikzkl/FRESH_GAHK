@@ -2,7 +2,7 @@
 
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
-        if (scroll >= 90) {
+        if (scroll !== 0) {
             $(".following.bar").addClass("light");
             $(".ui.inverted.menu .item > a:not(.ui)").addClass("light");
         } else {

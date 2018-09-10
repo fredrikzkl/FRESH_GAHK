@@ -254,7 +254,13 @@
     <Content Include="Content\Semantic\themes\default\assets\fonts\outline-icons.svg" />
     <Content Include="Content\Semantic\themes\default\assets\images\flags.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="Files\Images\hall2.jpg" />
+    <Content Include="Files\Images\madordning3.jpg" />
+    <Content Include="Files\Images\madordning2.jpg" />
+    <Content Include="Files\Images\selvstyre.jpg" />
+    <Content Include="Files\Images\fellesskab.jpg" />
     <Content Include="Files\Images\gahk_logo_small.png" />
+    <Content Include="Files\Images\madordning.jpg" />
     <Content Include="Files\Images\main.jpg" />
     <Content Include="Files\Portfolio\3.jpg" />
     <Content Include="Files\Portfolio\bilder.jpg" />
