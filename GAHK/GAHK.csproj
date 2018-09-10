@@ -254,6 +254,10 @@
     <Content Include="Content\Semantic\themes\default\assets\fonts\outline-icons.svg" />
     <Content Include="Content\Semantic\themes\default\assets\images\flags.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="Files\History\1.jpg" />
+    <Content Include="Files\History\2.jpg" />
+    <Content Include="Files\History\3.jpg" />
+    <Content Include="Files\History\4.jpg" />
     <Content Include="Files\Images\hall2.jpg" />
     <Content Include="Files\Images\madordning3.jpg" />
     <Content Include="Files\Images\madordning2.jpg" />
@@ -295,6 +299,8 @@
     <Content Include="Content\magnific-popup\magnific-popup.css" />
     <Content Include="Content\scrollreveal\scrollreveal.js" />
     <Content Include="Content\scrollreveal\scrollreveal.min.js" />
+    <Content Include="Scripts\disableHeader.js" />
+    <Content Include="Scripts\fbgetalbumphotos.js" />
     <Content Include="Scripts\home.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -307,6 +313,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -322,6 +329,8 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Portfolio\Index.cshtml" />
+    <Content Include="Views\Home\Historie.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

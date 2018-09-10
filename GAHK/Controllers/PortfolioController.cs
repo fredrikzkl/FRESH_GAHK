@@ -6,15 +6,10 @@ using System.Web.Mvc;
 
 namespace GAHK.Controllers
 {
-    public class HomeController : Controller
+    public class PortfolioController : Controller
     {
-        // GET: Home
+        // GET: Portfolio
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult Historie()
         {
             return View();
         }
