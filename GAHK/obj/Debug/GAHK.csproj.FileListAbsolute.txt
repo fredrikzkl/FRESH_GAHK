@@ -70,8 +70,8 @@ C:\Users\Fredrik\Documents\GAHK\GAHK\bin\System.Net.Http.Formatting.xml
 C:\Users\Fredrik\Documents\GAHK\GAHK\bin\System.Web.Http.xml
 C:\Users\Fredrik\Documents\GAHK\GAHK\bin\System.Web.Http.WebHost.xml
 C:\Users\Fredrik\Documents\GAHK\GAHK\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Fredrik\Documents\GAHK\GAHK\obj\Debug\GAHK.csprojAssemblyReference.cache
 C:\Users\Fredrik\Documents\GAHK\GAHK\obj\Debug\GAHK.csproj.CoreCompileInputs.cache
 C:\Users\Fredrik\Documents\GAHK\GAHK\obj\Debug\GAHK.csproj.CopyComplete
 C:\Users\Fredrik\Documents\GAHK\GAHK\obj\Debug\GAHK.dll
 C:\Users\Fredrik\Documents\GAHK\GAHK\obj\Debug\GAHK.pdb
+C:\Users\Fredrik\Documents\GAHK\GAHK\obj\Debug\GAHK.csprojAssemblyReference.cache

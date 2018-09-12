@@ -1,0 +1,83 @@
+﻿<div class="form-wrapper-content">
+    <h3>Søg fremleje</h3>
+    <form class="ui form">
+        <!--Navn -->
+        <div class="required field">
+            <label>Fulde navn</label>
+            <div class="ui fluid input">
+                <input type="text" name="first-name" placeholder="Fulde navn" maxlength="50">
+            </div>
+        </div>
+        <!--Email -->
+        <div class="required field">
+            <label>E-mail</label>
+            <div class="ui fluid input">
+                <input type="email" name="email" placeholder="E-mail" maxlength="50">
+            </div>
+        </div>
+        <!-- Kjønn Radio -->
+        <div class="inline fields">
+            <div class="required field">
+                <label for="kon">Dit køn:</label>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="mand" checked="" tabindex="0" class="hidden">
+                    <label>Mand</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="kvinne" tabindex="0" class="hidden">
+                    <label>Kvinde</label>
+                </div>
+            </div>
+        </div>
+        <!-- Alder + lengde studert -->
+        <div class="required field">
+            <label>Alder</label>
+            <input type="number" name="alder" placeholder="Alder">
+        </div>
+
+        <!-- -->
+        <div class="required field">
+            <label>Beskæftigelse</label>
+            <div class="ui fluid input">
+                <input type="text" name="beskæftigelse" placeholder="Beskæftigelse" maxlength="50">
+            </div>
+        </div>
+
+        <!-- Hørte om stedet-->
+        <div class="required field">
+            <label>Hvorfra har du hørt om kollegiet?</label>
+            <div class="ui fluid dropdown">
+                <input type="hidden" name="advertisement">
+                <i class="dropdown icon"></i>
+                <div class="default text">Vælg en påstand</div>
+                <div class="menu">
+                    <div class="item" data-value="0">Sociale Medier</div>
+                    <div class="item" data-value="1">Fra en hjemmeside</div>
+                    <div class="item" data-value="2">Fra beboere der var på mit studie</div>
+                    <div class="item" data-value="3">Annonce i avis</div>
+                    <div class="item" data-value="4">Anbefalet af en jeg kender</div>
+                    <div class="item" data-value="5">Set en plakat</div>
+                    <div class="item" data-value="6">Selv fundet frem til det</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Motivasjon-->
+        <div class="required field">
+            <label>Kort motivation</label>
+            <div lass="ui fluid input">
+                <textarea name="motivasjon" data-content="500 tegn tilbage" id="kort-motivasjon" rows="5" maxlength="500"></textarea>
+            </div>
+        </div>
+        <!--SEND INN!-->
+        <div class="ui button" onclick="sendInn()">Send inn søknad</div>
+    </form>
+</div>
+
+
+<script src="~/Scripts/opptagelse.js"></script>
+

@@ -25,6 +25,15 @@ h1, h2, h3, h4  {
     font-size: 1.5em !important;
 }
 
+h5 {
+    text-transform: uppercase;
+    color: #111;
+    letter-spacing: 4px !important;
+    line-height: 1.1;
+    font-size: 1em !important;
+    font-weight: 500;
+}
+
 .ui.card > .content > .header:not(.ui), .ui.cards > .card > .content > .header:not(.ui) {
     font-size: 1.07em;
     letter-spacing: 3px;
@@ -43,6 +52,14 @@ p {
 
 .gray-background {
     background-color: #f8f8f8;
+}
+
+.text{
+    text-align:left;
+}
+
+.text p, h5 {
+        color:rgba(0,0,0,.87) ;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -125,6 +142,72 @@ html {
 }
 
 
+
+/*FORMS*/
+.form-wrapper {
+    position: relative !important;
+    background: #fff !important;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2) !important;
+    -webkit-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+}
+
+.form-wrapper-content {
+    padding-top: 4em;
+    max-width: 800px;
+    padding: 40px 80px 40px 80px !important;
+    border-bottom: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.ui.form{
+    text-align:left;
+}
+
+/*  Kind of ruins the fade in fade out
+.form-wrapper:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15) !important;
+}
+*/
+
+input, select, textarea{
+    max-width:1000px;
+}
+
+#kort-motivasjon {
+    resize: none;
+}
+
+.form-header-content{
+    height:80%!important;
+    width:100%;
+}
+
+.wrapped-button:hover {
+    cursor: pointer !important;
+    background: #111;
+    transition: all 0.6s ease;
+}
+
+.wrapped-button:hover h5 {
+    color: white;
+}
+
+
+.wrapped-button h5{
+    padding:15px;
+}
+
+
+.form-header {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
 /*Hover over bilder i portfolio farge*/
 .portfolio-box .portfolio-box-caption {
     background:rgba(4, 4, 4, 0.53);
@@ -157,8 +240,6 @@ html {
     overflow: hidden !important;
 }
 
-
-
 .no-devider {
     border-bottom: none !important;
 }
@@ -166,7 +247,6 @@ html {
 
 /*Mast head*/
 .masthead.bg8 {
-    background-image: url(../../Files/Images/main.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -176,7 +256,6 @@ html {
     width: 100%;
     height: 100vh;
     content: '';
-    text-transform: uppercase;
 }
 
 .masthead.container {
@@ -444,6 +523,10 @@ html {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
     padding-top: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
 }
 
 
