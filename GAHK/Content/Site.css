@@ -529,5 +529,59 @@ input, select, textarea{
     margin: 0 !important;
 }
 
+.small-margin-top {
+    margin-top: 4.5px !important;
+}
 
 
+@media (max-width: 767px) {
+    .navbar-nav {
+        background-color: #f8f8f8; 
+        
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: black !important;
+        text-align: right;
+    }
+    .navbar-nav {
+        display: inline-block;
+        float: right;
+    }
+}
+
+.no-background {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-nav>li {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.light .navbar-default .navbar-nav>li>a {
+    color: #999;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: grey;
+}
+
+.light .navbar-default .navbar-nav>li>a:hover, .light .navbar-default .navbar-nav>li>a:focus {
+    color: black;
+}
+
+.gahk-image {
+    padding-top: 5px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}

@@ -35,41 +35,36 @@
     <div class="pusher">
         <div class="following bar">
             <div class="ui container">
-                <div class="ui large secondary network menu inverted">
-                    <div class="item">
-                        <a class="active ui side" href="/">
-                            <img class="ui image" src="~/Files/Images/gahk_logo_small.png" />
-                        </a>
-
-                    </div>
-
-                    <div class="right menu inverted">
-                        <div class="item">
-                            <a href="/Home/Historie">Historie</a>
+                <nav class="navbar navbar-default no-background">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand gahk-image" href="/">
+                                <img class="ui image" src="~/Files/Images/gahk_logo_small.png" />
+                            </a>
                         </div>
-                        <div class="item">
-                            <a href="/Portfolio/">Portfolio</a>
-                        </div>
-                        <div class="item">
-                            <a href="/Kollegielivet/">Kollegielivet</a>
-                        </div>
-                        <div class="item">
-                            <a href="Hey">Faciliteter</a>
-                        </div>
-                        <div class="item">
-                            <a href="/Opptagelse/">Opptagelse</a>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="/Home/Historie">Historie</a></li>
+                                <li><a href="/Portfolio">Portfolio</a></li>
+                                <li><a href="/Kollegielivet/">Kollegielivet</a></li>
+                                <li><a href="#">Faciliteter</a></li>
+                                <li><a href="/Opptagelse/">Opptagelse</a></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-
+                </nav>
             </div>
-
-
-
         </div>
+    </div>
 
-        <!--Body-->
-        @RenderBody()
+    <!--Body-->
+    @RenderBody()
     </div>
 
 
