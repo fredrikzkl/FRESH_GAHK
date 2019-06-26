@@ -26,49 +26,90 @@ Har du lyst til at bo sammen med studerende fra mange forskellige uddannelser p�
               </h5>
             </div>
           </div>
-          <div class="features text-center">
-            <div class="md-layout">
+      <div class="md-layout">
+        <div class="md-layout-item md-size-66 mx-auto md-small-size-100">
+          <md-card>
+            <carousel
+              :per-page="1"
+              loop
+              :speed="700"
+              autoplay
+              :autoplay-timeout="5000"
+              :mouse-drag="false"
+              navigationEnabled
+              navigationNextLabel="<i class='material-icons'>keyboard_arrow_right</i>"
+              navigationPrevLabel="<i class='material-icons'>keyboard_arrow_left</i>"
+            >
+              <slide>
+                <div class="carousel-caption">
+                  <h4>
+                    <md-icon>location_on</md-icon>
+                    Somewhere Beyond, United States
+                  </h4>
+                </div>
+                <img :src="carousel1" alt="carousel1" />
+              </slide>
+              <slide>
+                <div class="carousel-caption">
+                  <h4>
+                    <md-icon>location_on</md-icon>
+                    Yellowstone National Park, United States
+                  </h4>
+                </div>
+                <img :src="carousel2" alt="carousel2" />
+              </slide>
+              <slide>
+                <div class="carousel-caption">
+                  <h4>
+                    <md-icon>location_on</md-icon>
+                    Yellowstone National Park, United States
+                  </h4>
+                </div>
+                <img :src="carousel3" alt="carousel3" />
+              </slide>
+            </carousel>
+          </md-card>
+        </div>
+      </div>
+
+           <div class="md-layout">
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                <div class="info">
-                  <div class="icon icon-info">
-                    <md-icon>chat</md-icon>
-                  </div>
-                  <h4 class="info-title">Free Chat</h4>
-                  <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
-                  </p>
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+        
+                    <h4 class="card-title">
+                      Tradisjon
+                      <br />
+                    </h4>
+
+                    <md-card-content>
+                      <p class="card-description">
+                        G. A. Hagemanns Kollegium er et af de ældste kollegier i København og huser 61 alumner indskrevet på vidt forskellige studier og opvokset i alle afkroge af landet. Siden 1908 har alumnerne inden for de gamle mure levet en tilværelse med højt til loftet, gensidig respekt og en vilje til at bidrage med 110 procent til et enestående fællesskab.
+                      </p>
+                    </md-card-content>
+
+                  </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                <div class="info">
-                  <div class="icon icon-success">
-                    <md-icon>verified_user</md-icon>
-                  </div>
-                  <h4 class="info-title">Verified Users</h4>
-                  <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
-                  </p>
+
+               <div class="md-layout-item md-medium-size-33 md-small-size-100">
+                <div class="team-player">
+                  <md-card class="md-card-plain">
+                    
+                    <h4 class="card-title">
+                      Historie
+                      <br />
+                    </h4>
+
+                    <md-card-content>
+                      <p class="card-description">
+                    Kollegiet er opkaldt efter grundlæggeren Gustav Adolph Hagemann og er mere end bare et sted at bo. Det unikke fællesskab, der opstår når så mange engagerede studerende bor sammen, skal der værnes om, og alle bidrager til, at stedets ånd holdes i live, og at de flotte rammer på Kristianiagade kan stå så flotte, som de stadig gør i dag.                      </p>
+                    </md-card-content>
+                  </md-card>
                 </div>
               </div>
-              <div class="md-layout-item md-medium-size-33 md-small-size-100">
-                <div class="info">
-                  <div class="icon icon-danger">
-                    <md-icon>fingerprint</md-icon>
-                  </div>
-                  <h4 class="info-title">Fingerprint</h4>
-                  <p>
-                    Divide details about your product or agency work into parts.
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough.
-                  </p>
-                </div>
-              </div>
+           
             </div>
-          </div>
         </div>
       </div>
     
@@ -110,6 +151,18 @@ export default {
       type: String,
       default: require("@/assets/img/gahk_fasade.jpg")
     },
+    gahk1: {
+      type: String,
+      default: require("@/assets/img/huset/madordning2.jpg")
+    },
+    gahk2: {
+      type: String,
+      default: require("@/assets/img/huset/madordning.jpg")
+    },
+    teamImg3: {
+      type: String,
+      default: require("@/assets/img/faces/kendall.jpg")
+    },
     signup: {
       type: String,
       default: require("@/assets/img/city.jpg")
@@ -128,7 +181,10 @@ export default {
       firstname: null,
       email: null,
       password: null,
-      leafShow: false
+      leafShow: false,
+      carousel1: require("@/assets/img/nature-2.jpg"),
+      carousel2: require("@/assets/img/nature.jpg"),
+      carousel3: require("@/assets/img/nature-3.jpg")
     };
   },
   methods: {

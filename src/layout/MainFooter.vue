@@ -8,31 +8,21 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.creative-tim.com">
-              Creative Tim
+            <a href="">
+              <i class="fas fa-map-marker"></i>
+              Kristianiagade 10 - 2100 København Ø 
             </a>
           </li>
           <li>
-            <a href="https:///presentation.creative-tim.com">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="https:///blog.creative-tim.com">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="https://www.creative-tim.com/license">
-              Licenses
+            <a href="">
+               <i class="fas fa-envelope"></i>
+               Kontakt os
             </a>
           </li>
         </ul>
       </nav>
-      <div class="copyright">
-        &copy; {{ year }}, made with <md-icon>favorite</md-icon> by
-        <a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a>
-        for a better web.
+      <div>
+        <!--For å ha content nederst til høyre i footeren-->
       </div>
     </div>
   </footer>
