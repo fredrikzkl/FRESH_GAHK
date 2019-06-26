@@ -163,6 +163,7 @@ function resizeThrottler(actualResizeHandler) {
   }
 }
 
+
 import MobileMenu from "@/layout/MobileMenu";
 export default {
   components: {
@@ -171,7 +172,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: "dark",
+      default: "white",
       validator(value) {
         return [
           "white",

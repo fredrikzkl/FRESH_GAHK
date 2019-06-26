@@ -128,6 +128,7 @@ import TypographyImages from "./components/TypographyImagesSection";
 import JavascriptComponents from "./components/JavascriptComponentsSection";
 import { LoginCard } from "@/components";
 
+
 export default {
   components: {
     BasicElements,
@@ -194,6 +195,14 @@ export default {
       } else {
         this.leafShow = true;
       }
+    },
+    getFacebookImages(){
+      var url = "https://www.facebook.com/pg/GA-Hagemanns-Kollegium-299814993380395/photos/?tab=album&album_id=299844250044136&ref=page_internal";
+      this.$http.get(url).then(function(response){
+        if(response.status == "200"){
+            console.log(response);
+        }
+      })
     }
   },
   computed: {
@@ -209,6 +218,7 @@ export default {
     }
   },
   mounted() {
+    this.getFacebookImages();
     this.leafActive();
     window.addEventListener("resize", this.leafActive);
   },
