@@ -43,8 +43,7 @@ Har du lyst til at bo sammen med studerende fra mange forskellige uddannelser p√
               <slide>
                 <div class="carousel-caption">
                   <h4>
-                    <md-icon>location_on</md-icon>
-                    Somewhere Beyond, United States
+                    Skovtur
                   </h4>
                 </div>
                 <img :src="carousel1" alt="carousel1" />
@@ -52,8 +51,7 @@ Har du lyst til at bo sammen med studerende fra mange forskellige uddannelser p√
               <slide>
                 <div class="carousel-caption">
                   <h4>
-                    <md-icon>location_on</md-icon>
-                    Yellowstone National Park, United States
+                    Hjemkomstfest
                   </h4>
                 </div>
                 <img :src="carousel2" alt="carousel2" />
@@ -61,8 +59,7 @@ Har du lyst til at bo sammen med studerende fra mange forskellige uddannelser p√
               <slide>
                 <div class="carousel-caption">
                   <h4>
-                    <md-icon>location_on</md-icon>
-                    Yellowstone National Park, United States
+                    De nye alumners fest
                   </h4>
                 </div>
                 <img :src="carousel3" alt="carousel3" />
@@ -183,9 +180,9 @@ export default {
       email: null,
       password: null,
       leafShow: false,
-      carousel1: require("@/assets/img/nature-2.jpg"),
-      carousel2: require("@/assets/img/nature.jpg"),
-      carousel3: require("@/assets/img/nature-3.jpg")
+      carousel1: require("@/assets/img/karusell/1.jpg"),
+      carousel2: require("@/assets/img/karusell/2.jpg"),
+      carousel3: require("@/assets/img/karusell/3.jpg")
     };
   },
   methods: {

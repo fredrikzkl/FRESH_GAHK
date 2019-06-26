@@ -3,10 +3,13 @@ import App from "./App.vue";
 import router from "./router";
 
 import MaterialKit from "./plugins/material-kit";
+import VueResource from "vue-resource";
 
 Vue.config.productionTip = false;
 
 Vue.use(MaterialKit);
+Vue.use(VueResource);
+
 
 const NavbarStore = {
   showNavbar: false
