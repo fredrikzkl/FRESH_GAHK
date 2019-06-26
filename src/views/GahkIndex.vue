@@ -4,7 +4,7 @@
       <div class="md-layout">
         <div class="md-layout-item">
           <div class="image-wrapper">
-            <img src="https://www.gahk.dk/public/image/upload/images/%5b01%5dsmall.jpg"/>
+            
             <div class="brand">
               <h1>G.A Hagemanns Kollegium</h1>
               <h3>Beste kollegium eu</h3>
@@ -291,23 +291,11 @@ export default {
   props: {
     image: {
       type: String,
-      default: require("@/assets/img/vue-mk-header.jpg")
+      default: require("@/assets/img/gahk_fasade.jpg")
     },
-    leaf4: {
+    gahkfasade: {
       type: String,
-      default: require("@/assets/img/leaf4.png")
-    },
-    leaf3: {
-      type: String,
-      default: require("@/assets/img/leaf3.png")
-    },
-    leaf2: {
-      type: String,
-      default: require("@/assets/img/leaf2.png")
-    },
-    leaf1: {
-      type: String,
-      default: require("@/assets/img/leaf1.png")
+      default: require("@/assets/img/gahk_fasade.jpg")
     },
     signup: {
       type: String,
