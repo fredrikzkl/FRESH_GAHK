@@ -171,7 +171,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: "white",
+      default: "dark",
       validator(value) {
         return [
           "white",
