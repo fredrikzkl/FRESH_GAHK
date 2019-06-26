@@ -68,8 +68,8 @@
                 target="_blank"
                 v-if="showDownload"
               >
-                <i class="material-icons">content_paste</i>
-                <p>Documentation</p>
+                <i class="material-icons"></i>
+                <p>Historie</p>
               </md-list-item>
 
               <md-list-item
@@ -77,8 +77,8 @@
                 @click="scrollToElement()"
                 v-if="showDownload"
               >
-                <i class="material-icons">cloud_download</i>
-                <p>Download</p>
+                <i class="material-icons"></i>
+                <p>Lort</p>
               </md-list-item>
 
               <li class="md-list-item" v-else>
@@ -122,33 +122,23 @@
               </li>
 
               <md-list-item
-                href="https://twitter.com/CreativeTim"
-                target="_blank"
-              >
-                <i class="fab fa-twitter"></i>
-                <p class="hidden-lg">Twitter</p>
-                <md-tooltip md-direction="bottom"
-                  >Follow us on Twitter</md-tooltip
-                >
-              </md-list-item>
-              <md-list-item
-                href="https://www.facebook.com/CreativeTim"
+                href="https://www.facebook.com/GA-Hagemanns-Kollegium-299814993380395"
                 target="_blank"
               >
                 <i class="fab fa-facebook-square"></i>
                 <p class="hidden-lg">Facebook</p>
                 <md-tooltip md-direction="bottom"
-                  >Like us on Facebook</md-tooltip
+                  >Lik oss på facebook</md-tooltip
                 >
               </md-list-item>
               <md-list-item
-                href="https://www.instagram.com/CreativeTimOfficial"
+                href="https://www.instagram.com/gahagemannskollegium"
                 target="_blank"
               >
                 <i class="fab fa-instagram"></i>
                 <p class="hidden-lg">Instagram</p>
                 <md-tooltip md-direction="bottom"
-                  >Follow us on Instagram</md-tooltip
+                  >Følg oss på Instagram</md-tooltip
                 >
               </md-list-item>
             </md-list>
