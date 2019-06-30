@@ -8,7 +8,8 @@
   >
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
-        <h3 class="md-title">G.A Hagemanns Kollegium</h3>
+        <a href="/#/">
+        <h3 class="md-title">G.A Hagemanns Kollegium</h3></a>
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -63,6 +64,16 @@
                 </a>
               </li>
 
+              
+              <md-list-item
+                href="/#/kollegielivet"
+                @click="scrollToElement()"
+                v-if="showDownload"
+              >
+                <i class="material-icons"></i>
+                <p>Kollegielivet</p>
+              </md-list-item>
+
               <md-list-item
                 href="https://demos.creative-tim.com/vue-material-kit/documentation/"
                 target="_blank"
@@ -79,6 +90,16 @@
               >
                 <i class="material-icons"></i>
                 <p>Lort</p>
+              </md-list-item>
+
+               
+              <md-list-item
+                href="/#/optagelse"
+                @click="scrollToElement()"
+                v-if="showDownload"
+              >
+                <i class="material-icons"></i>
+                <p>Optagelse</p>
               </md-list-item>
 
               <li class="md-list-item" v-else>
