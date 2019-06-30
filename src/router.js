@@ -75,7 +75,6 @@ export default new Router({
       components: { default: Optagelse, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
-        footer: { backgroundColor: "black" }
       }
     }
   ],

@@ -83,15 +83,6 @@
                 <p>Historie</p>
               </md-list-item>
 
-              <md-list-item
-                href="javascript:void(0)"
-                @click="scrollToElement()"
-                v-if="showDownload"
-              >
-                <i class="material-icons"></i>
-                <p>Lort</p>
-              </md-list-item>
-
                
               <md-list-item
                 href="/#/optagelse"
