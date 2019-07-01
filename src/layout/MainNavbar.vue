@@ -86,7 +86,7 @@
                
               <md-list-item
                 href="/#/optagelse"
-                @click="scrollToElement()"
+                @click="routeTo('Optagelse')"
                 v-if="showDownload"
               >
                 <i class="material-icons"></i>
@@ -229,6 +229,10 @@ export default {
       } else {
         bodyClick.remove();
       }
+      
+    },
+    routeTo(arg){
+        this.$router.push(arg);
     },
     toggleNavbarMobile() {
       this.NavbarStore.showNavbar = !this.NavbarStore.showNavbar;

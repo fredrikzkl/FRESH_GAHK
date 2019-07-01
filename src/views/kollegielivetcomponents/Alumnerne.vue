@@ -8,11 +8,11 @@
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="team-player">
                   <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
+                    <div class="md-layout-item md-size-100 mx-auto">
                       <img
                         :src="alumne1"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-raised img-fluid"
+                        class="img-raised rounded-circle img-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -34,7 +34,7 @@ Når man kommer hjem fra en lang dag på studiet, kan man gå ned og snakke med 
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="team-player">
                   <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
+                    <div class="md-layout-item md-size-100 mx-auto">
                       <img
                         :src="teamImg2"
                         alt="Thumbnail Image"
@@ -78,7 +78,7 @@ Når man kommer hjem fra en lang dag på studiet, kan man gå ned og snakke med 
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="team-player">
                   <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
+                    <div class="md-layout-item md-size-100 mx-auto">
                       <img
                         :src="teamImg3"
                         alt="Thumbnail Image"

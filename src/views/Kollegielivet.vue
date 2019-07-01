@@ -26,12 +26,12 @@
         <div class="container">
           <div class="md-layout">
             <div
-              class="md-layout-item md-size-66 md-xsmall-size-100 mx-auto text-center"
+              class="md-layout-item md-size-66 md-small-size-100 mx-auto text-center"
             >
               <h2 class="title text-center">Visionen for GAHK</h2>
               <h5 class="description">
                 GAHK skal videreføre G.A. Hagemanns ønske om at skabe et hjem præget af forpligtende fællesskab for alumnerne med særligt hensyn til nutidens krav og fremtidens muligheder. GAHK skal i tråd med Hagemanns ånd være funderet på en innovativ, fremsynet kultur, der indbyder til tværfaglig nytænkning og kunstnerisk udfoldelse.
-
+              <br><br>
 GAHK skal være et rummeligt og gæstfrit sted, som favner kvinder og mænd fra alle studieretninger.
               </h5>
               
@@ -43,27 +43,16 @@ GAHK skal være et rummeligt og gæstfrit sted, som favner kvinder og mænd fra 
           
           <div class="profile-tabs">
             <tabs
-              :tab-name="['Alumnerne','Madordning', 'Årets Gang', 'Værelser']"
-              :tab-icon="['user','camera', 'palette', 'favorite']"
+              :tab-name="['Alumnerne','Madordning', 'Årets Gang', 'Bestyring']"
+              :tab-icon="['school','restaurant', 'event', 'gavel']"
               plain
               nav-pills-icons
               color-button="success"
             >
               <!-- here you can add your content for tab-content -->
               <Alumnerne slot="tab-pane-1"></Alumnerne>
-              
-              <template slot="tab-pane-2">
-                <div class="md-layout">
-                                     <p>Tes2t</p>
-
-                </div>
-              </template>
-              <template slot="tab-pane-3">
-                <div class="md-layout">
-                                     <p>Te3st</p>
-
-                </div>
-              </template>
+              <Madordning slot="tab-pane-2"></Madordning>
+             
             </tabs>
           </div>
         </div>
@@ -76,10 +65,12 @@ GAHK skal være et rummeligt og gæstfrit sted, som favner kvinder og mænd fra 
 import { Tabs } from "@/components";
 
 import Alumnerne from "./kollegielivetcomponents/Alumnerne";
+import Madordning from "./kollegielivetcomponents/Madordning";
 
 export default {
   components: {
     Alumnerne,
+    Madordning,
     Tabs
   },
   bodyClass: "landing-page",
@@ -100,6 +91,7 @@ export default {
       type: String,
       default: require("@/assets/img/faces/kendall.jpg")
     }
+
   },
   data() {
     return {
