@@ -65,14 +65,42 @@
               </li>
 
               
-              <md-list-item
-                href="/#/kollegielivet"
-                @click="scrollToElement()"
-                v-if="showDownload"
-              >
-                <i class="material-icons"></i>
-                <p>Kollegielivet</p>
-              </md-list-item>
+               <li class="md-list-item">
+                <a
+                  href="javascript:void(0)"
+                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
+                >
+                  <div class="md-list-item-content">
+                    <drop-down direction="down">
+                      <md-button
+                        slot="title"
+                        class="md-button md-button-link md-white md-simple dropdown-toggle"
+                        data-toggle="dropdown"
+                      >
+                        <i class="material-icons">apps</i>
+                        <p>Kollegielivet</p>
+                      </md-button>
+                      <ul class="dropdown-menu dropdown-with-icons">
+                        <li>
+                          <a href="#/madordning">
+                            <i class="material-icons">restaurant</i>
+                            <p>Madordning</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#/aaretsgang"
+                          >
+                            <i class="material-icons">insert_invitation</i>
+                            <p>Årets Gang</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </drop-down>
+                  </div>
+                </a>
+              </li>
+
 
               <md-list-item
                 href="https://demos.creative-tim.com/vue-material-kit/documentation/"

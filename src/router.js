@@ -6,6 +6,11 @@ import Login from "./views/Login.vue";
 import Profile from "./views/Profile.vue";
 import GahkIndex from "./views/GahkIndex.vue";
 import Kollegielivet from "./views/Kollegielivet.vue";
+
+import Madordning from "./views/kollegielivetcomponents/Madordning.vue";
+import Aaretsgang from "./views/kollegielivetcomponents/Aaretsgang.vue";
+
+
 import Optagelse from "./views/Optagelse.vue";
 
 import MainNavbar from "./layout/MainNavbar.vue";
@@ -64,6 +69,24 @@ export default new Router({
       path: "/Kollegielivet",
       name: "kollegielivet",
       components: { default: Kollegielivet, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/Madordning",
+      name: "madordning",
+      components: { default: Madordning, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/Aaretsgang",
+      name: "aaretsgang",
+      components: { default: Aaretsgang, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }
