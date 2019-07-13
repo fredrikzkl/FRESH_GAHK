@@ -55,19 +55,15 @@ export default {
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/madordning/madordning.jpg")
-    },
-    madordning1: {
-      type: String,
-      default: require("@/assets/img/madordning/madordning.jpg")
+      default: require("@/assets/img/kollegielivet/madordning/header.jpg")
     },
     madordning2: {
       type: String,
-      default: require("@/assets/img/madordning/madordning2.jpg")
+      default: require("@/assets/img/kollegielivet/madordning/aftensmad.jpg")
     },
     kokkenvagt: {
       type: String,
-      default: require("@/assets/img/madordning/vagt.jpg")
+      default: require("@/assets/img/kollegielivet/madordning/vagt.jpg")
     }
   },
 

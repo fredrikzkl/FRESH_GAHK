@@ -190,12 +190,24 @@
     height: auto;
 }
 
+
+
 .md-card .md-card-header-image img {
     width: 100%;
     border-radius: 6px;
     pointer-events: none;
     max-height: 388px;
     overflow:hidden;
+}
+
+.md-card .md-card-header-image {
+    position: relative;
+    padding: 0;
+    z-index: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
 }
 
 .md-card .md-card-header-image:not([shadow-off=true]) img {
@@ -246,6 +258,26 @@
     background-color: #999;
 }
 
+.md-field.md-form-group > .md-icon, .md-field.md-datepicker > .md-icon {
+    margin: 6px 0;
+    color: inherit;
+}
+
+.md-icon,  .md-field.md-form-group > .md-icon > i{
+    /* width: 24px; */
+    /* min-width: 24px; */
+    /* height: 24px; */
+    /* font-size: 24px!important; */
+    /* margin: auto; */
+    display: inline-flex;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
 
 .leaf1,
 .leaf3,

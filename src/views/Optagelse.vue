@@ -3,73 +3,68 @@
     <div class="section page-header header-filter" :style="headerStyle">
       <div class="container">
         <div class="md-layout">
-          <div
-            class="md-layout-item md-size-33 md-small-size-66 md-xsmall-size-100 md-medium-size-40 mx-auto"
-          >
-            <login-card header-color="green">
-              <h4 slot="title" class="card-title">Optagelse</h4>
-              
-              <p slot="description" class="description" @click="classicModal = true">Or Be Classical</p>
-
-              <md-button
-                class="md-success md-block"
-                @click="classicModal = true"
-                ><md-icon>library_books</md-icon> Classic</md-button
-              >
-    
-              <modal v-if="classicModal" @close="classicModalHide">
-                <template slot="header">
-                  <h4 class="modal-title">Modal Title</h4>
-                  <md-button
-                    class="md-simple md-just-icon md-round modal-default-button"
-                    @click="classicModalHide"
+          <div class="md-layout-item md-size-80 md-small-size-100 mx-auto text-center">
+            <div class="md-card md-card md-card-signup md-theme-default">
+              <div class="md-card-content">
+                <h2 class="card-title text-center">Optagelse</h2>
+                <div class="md-layout">
+                  <!--Tekst og Generell Info-->
+                  <div class="md-layout-item md-size-50 md-small-size-100 ml-auto"></div>
+                  <!--Selve Formen-->
+                  <div
+                    class="md-layout-item md-size-40 md-medium-size-50 md-small-size-100 mr-auto"
                   >
-                    <md-icon>clear</md-icon>
-                  </md-button>
-                </template>
+                    <form>
+                      <md-field class="md-form-group" slot="inputs">
+                        <md-icon>face</md-icon>
+                        <label>Fulde Navn...</label>
+                        <md-input v-model="fuldenavn"></md-input>
+                      </md-field>
+                      <md-field class="md-form-group" slot="inputs">
+                        <md-icon>mail</md-icon>
+                        <label>Email...</label>
+                        <md-input v-model="email"></md-input>
+                      </md-field>
+                      <div class="md-form-group" slot="radios">
+                        <!--<i class="fas fa-venus-mars"></i>-->
+                        <md-radio v-model="gender" :value="mand">Mand</md-radio>
+                        <md-radio v-model="gender" :value="kvinde">Kvinde</md-radio>
+                      </div>
+                      <div class="md-layout md-gutter">
+                         <div class="md-layout-item md-small-size-100">
+                          <md-field>
+                            <label for="age">Age</label>
+                            <md-input
+                              type="number"
+                              id="age"
+                              name="age"
+                              autocomplete="age"
+                              v-model="age"
+                            />
+                       
+                          </md-field>
+                        </div>
 
-                <template slot="body">
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the
-                    coast of the Semantics, a large language ocean. A small
-                    river named Duden flows by their place and supplies it with
-                    the necessary regelialia. It is a paradisematic country, in
-                    which roasted parts of sentences fly into your mouth. Even
-                    the all-powerful Pointing has no control about the blind
-                    texts it is an almost unorthographic life One day however a
-                    small line of blind text by the name of Lorem Ipsum decided
-                    to leave for the far World of Grammar.
-                  </p>
-                </template>
+                        <div class="md-layout-item md-small-size-100">
+                          <md-field>
+                            <label for="age">År studeret</label>
+                            <md-input
+                              type="number"
+                              id="aarStudert"
+                              name="aarStudert"
+                              v-model="aarStudert"
+                            />
+                       
+                          </md-field>
 
-                <template slot="footer">
-                  <md-button class="md-simple">Nice Button</md-button>
-                  <md-button
-                    class="md-danger md-simple"
-                    @click="classicModalHide"
-                    >Close</md-button
-                  >
-                </template>
-              </modal>
-
-
-              <md-field class="md-form-group" slot="inputs">
-                <md-icon>face</md-icon>
-                <label>Navn</label>
-                <md-input v-model="navn"></md-input>
-              </md-field>
-              <md-field class="md-form-group" slot="inputs">
-                <md-icon>email</md-icon>
-                <label>Email</label>
-                <md-input v-model="email" type="email"></md-input>
-              </md-field>
-              
-              <md-button slot="footer" class="md-primary md-lg">
-                Send Ansøgning
-              </md-button>
-            </login-card>
+                          
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,18 +75,22 @@
 <script>
 import { LoginCard, Modal } from "@/components";
 
-
 export default {
   components: {
     LoginCard,
     Modal
   },
-  bodyClass: "login-page",
+  bodyClass: "singup-page",
   data() {
     return {
       classicModal: false,
-      navn: null,
+      fuldenavn: null,
       email: null,
+      mand: 0,
+      kvinde: 1,
+      gender: null,
+      age : null,
+      aarStudert : null
     };
   },
   methods: {

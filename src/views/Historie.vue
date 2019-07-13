@@ -4,8 +4,8 @@
       <div class="container">
         <div class="md-layout">
           <div class="md-layout-item md-size-66 md-small-size-100 mx-auto text-center">
-            <h1 class="title">Året på GAHK</h1>
-            <h4>På kollegiet har vi en række traditionelle fester og arrangementer, der gentages hvert år. Dertil kommer selvfølgelig alt det spontane.</h4>
+            <h1 class="title">Kollegiets Historie</h1>
+            <h4>Noe tekst her</h4>
             <br />
             <md-button
               href
@@ -23,8 +23,10 @@
       <div class="section section-text pb-0">
         <div class="container">
           <div class="md-layout-item md-size-66 md-small-size-100 mx-auto">
-            <h3 class="title text-left">Skitur</h3>
-            <p>I slutningen af januar plejer de skiglade at arrangere en skitur og flytte festerne og hverdagen ned til en uge i Frankrig.</p>
+            <h3 class="title text-left">Prolog</h3>
+            <p>I 1908 indviede industri- og videnskabsmanden Gustav Adolph Hagemann sit historiske kollegium på indre Østerbro under mottoet "Tien andre, vil selv du tienes." Hagemann benyttede derved en del af sin formue, der var indtjent gennem et langt liv, til at afhjælpe studerendes boligbehov.</p>
+            <img alt="Raised Image" :src="historieBilde1" class="img-raised rounded center" />
+
             <h3 class="title text-left">Fastelavn</h3>
             <p>I februar klæder alumnerne sig ud i mærkelige og kreative kostumer, og giver den gas til den lyse morgen.</p>
             <h3 class="title text-left">Gamle Alumners Fest</h3>
@@ -149,14 +151,14 @@
                 <div class="md-card md-card-blog md-theme-default">
                   <div class="md-card-header md-card-header-image">
                     <img :src="madordningHeader" class="img" />
-                    
                   </div>
                   <div class="md-card-content">
-                  
                     <h6 class="card-category text-info">Kollegielivet</h6>
                     <h4 class="card-title">Madordning</h4>
-                    <p class="card-description">Læs om den fantastiske madordningen vi har her på kollegiet</p>
-                    </div>
+                    <p
+                      class="card-description"
+                    >Læs om den fantastiske madordningen vi har her på kollegiet</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -175,7 +177,11 @@ export default {
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/kollegielivet/aaretsgang/header.jpg")
+      default: require("@/assets/img/historie/header.jpg")
+    },
+    historieBilde1: {
+      type: String,
+      default: require("@/assets/img/historie/oldschoolFylla.jpg")
     },
     skovtur1: {
       type: String,

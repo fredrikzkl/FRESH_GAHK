@@ -4,11 +4,15 @@ import Index from "./views/Index.vue";
 import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Profile from "./views/Profile.vue";
-import GahkIndex from "./views/GahkIndex.vue";
+
+import Historie from "./views/Historie.vue";
+
 import Kollegielivet from "./views/Kollegielivet.vue";
 
 import Madordning from "./views/kollegielivetcomponents/Madordning.vue";
 import Aaretsgang from "./views/kollegielivetcomponents/Aaretsgang.vue";
+import Bestyring from "./views/kollegielivetcomponents/Bestyring.vue";
+
 
 
 import Optagelse from "./views/Optagelse.vue";
@@ -57,9 +61,9 @@ export default new Router({
       }
     },
     {
-      path: "/GahkIndex",
-      name: "gahkindex",
-      components: { default: GahkIndex, header: MainNavbar, footer: MainFooter },
+      path: "/historie",
+      name: "historie",
+      components: { default: Historie, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }
@@ -87,6 +91,15 @@ export default new Router({
       path: "/Aaretsgang",
       name: "aaretsgang",
       components: { default: Aaretsgang, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/bestyring",
+      name: "bestyring",
+      components: { default: Bestyring, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }

@@ -9,7 +9,8 @@
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start">
         <a href="/#/">
-        <h3 class="md-title">G.A Hagemanns Kollegium</h3></a>
+          <h3 class="md-title">G.A Hagemanns Kollegium</h3>
+        </a>
       </div>
       <div class="md-toolbar-section-end">
         <md-button
@@ -51,9 +52,7 @@
                           </a>
                         </li>
                         <li>
-                          <a
-                            href="https://demos.creative-tim.com/vue-material-kit/documentation/"
-                          >
+                          <a href="https://demos.creative-tim.com/vue-material-kit/documentation/">
                             <i class="material-icons">content_paste</i>
                             <p>Documentation</p>
                           </a>
@@ -63,9 +62,12 @@
                   </div>
                 </a>
               </li>
+              <md-list-item href="/#/Historie" v-if="showDownload">
+                <i class="material-icons"></i>
+                <p>Historie</p>
+              </md-list-item>
 
-              
-               <li class="md-list-item">
+              <li class="md-list-item">
                 <a
                   href="javascript:void(0)"
                   class="md-list-item-router md-list-item-container md-button-clean dropdown"
@@ -88,11 +90,15 @@
                           </a>
                         </li>
                         <li>
-                          <a
-                            href="#/aaretsgang"
-                          >
+                          <a href="#/aaretsgang">
                             <i class="material-icons">insert_invitation</i>
                             <p>Årets Gang</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#/bestyring">
+                            <i class="material-icons">gavel</i>
+                            <p>Bestyring</p>
                           </a>
                         </li>
                       </ul>
@@ -101,22 +107,7 @@
                 </a>
               </li>
 
-
-              <md-list-item
-                href="https://demos.creative-tim.com/vue-material-kit/documentation/"
-                target="_blank"
-                v-if="showDownload"
-              >
-                <i class="material-icons"></i>
-                <p>Historie</p>
-              </md-list-item>
-
-               
-              <md-list-item
-                href="/#/optagelse"
-                @click="routeTo('Optagelse')"
-                v-if="showDownload"
-              >
+              <md-list-item href="/#/optagelse" @click="routeTo('Optagelse')" v-if="showDownload">
                 <i class="material-icons"></i>
                 <p>Optagelse</p>
               </md-list-item>
@@ -167,19 +158,12 @@
               >
                 <i class="fab fa-facebook-square"></i>
                 <p class="hidden-lg">Facebook</p>
-                <md-tooltip md-direction="bottom"
-                  >Lik oss på facebook</md-tooltip
-                >
+                <md-tooltip md-direction="bottom">Lik oss på facebook</md-tooltip>
               </md-list-item>
-              <md-list-item
-                href="https://www.instagram.com/gahagemannskollegium"
-                target="_blank"
-              >
+              <md-list-item href="https://www.instagram.com/gahagemannskollegium" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <p class="hidden-lg">Instagram</p>
-                <md-tooltip md-direction="bottom"
-                  >Følg oss på Instagram</md-tooltip
-                >
+                <md-tooltip md-direction="bottom">Følg oss på Instagram</md-tooltip>
               </md-list-item>
             </md-list>
           </div>
@@ -202,7 +186,6 @@ function resizeThrottler(actualResizeHandler) {
     }, 66);
   }
 }
-
 
 import MobileMenu from "@/layout/MobileMenu";
 export default {
@@ -257,10 +240,9 @@ export default {
       } else {
         bodyClick.remove();
       }
-      
     },
-    routeTo(arg){
-        this.$router.push(arg);
+    routeTo(arg) {
+      this.$router.push(arg);
     },
     toggleNavbarMobile() {
       this.NavbarStore.showNavbar = !this.NavbarStore.showNavbar;

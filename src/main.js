@@ -4,11 +4,13 @@ import router from "./router";
 
 import MaterialKit from "./plugins/material-kit";
 import VueResource from "vue-resource";
+import Vuelidate from "vuelidate";
 
 Vue.config.productionTip = false;
 
 Vue.use(MaterialKit);
 Vue.use(VueResource);
+Vue.use(Vuelidate);
 
 
 const NavbarStore = {

@@ -4,7 +4,7 @@
       <div class="container">
         <div class="md-layout">
           <div class="md-layout-item md-size-66 md-small-size-100 mx-auto text-center">
-            <h1 class="title">Året på GAHK</h1>
+            <h1 class="title">Bestyring</h1>
             <h4>På kollegiet har vi en række traditionelle fester og arrangementer, der gentages hvert år. Dertil kommer selvfølgelig alt det spontane.</h4>
             <br />
             <md-button
