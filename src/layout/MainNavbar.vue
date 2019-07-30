@@ -95,9 +95,9 @@
                             <p>Årets Gang</p>
                           </a>
                         </li>
-                         <li>
+                        <li>
                           <a href="#/alumnerne">
-                            <i class="material-icons">insert_invitation</i>
+                            <i class="material-icons">face</i>
                             <p>Alumnerene</p>
                           </a>
                         </li>
