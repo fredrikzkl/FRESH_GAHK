@@ -95,6 +95,12 @@
                             <p>Årets Gang</p>
                           </a>
                         </li>
+                         <li>
+                          <a href="#/alumnerne">
+                            <i class="material-icons">insert_invitation</i>
+                            <p>Alumnerene</p>
+                          </a>
+                        </li>
                         <li>
                           <a href="#/bestyring">
                             <i class="material-icons">gavel</i>

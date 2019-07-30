@@ -11,6 +11,7 @@ import Kollegielivet from "./views/Kollegielivet.vue";
 
 import Madordning from "./views/kollegielivetcomponents/Madordning.vue";
 import Aaretsgang from "./views/kollegielivetcomponents/Aaretsgang.vue";
+import Alumnerne from "./views/kollegielivetcomponents/Alumnerne.vue";
 import Bestyring from "./views/kollegielivetcomponents/Bestyring.vue";
 
 
@@ -91,6 +92,15 @@ export default new Router({
       path: "/Aaretsgang",
       name: "aaretsgang",
       components: { default: Aaretsgang, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/Alumnerne",
+      name: "alumnerne",
+      components: { default: Alumnerne, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }

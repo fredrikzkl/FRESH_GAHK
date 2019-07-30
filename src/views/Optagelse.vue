@@ -25,15 +25,16 @@
                         <label>Email...</label>
                         <md-input v-model="email"></md-input>
                       </md-field>
+                    
                       <div class="md-form-group" slot="radios">
                         <!--<i class="fas fa-venus-mars"></i>-->
                         <md-radio v-model="gender" :value="mand">Mand</md-radio>
                         <md-radio v-model="gender" :value="kvinde">Kvinde</md-radio>
                       </div>
-                      <div class="md-layout md-gutter">
-                         <div class="md-layout-item md-small-size-100">
+                      <div class="md-layout">
+                        <div class="md-layout-item md-size-50">
                           <md-field>
-                            <label for="age">Age</label>
+                            <label for="age">Alder</label>
                             <md-input
                               type="number"
                               id="age"
@@ -41,11 +42,10 @@
                               autocomplete="age"
                               v-model="age"
                             />
-                       
                           </md-field>
                         </div>
 
-                        <div class="md-layout-item md-small-size-100">
+                        <div class="md-layout-item md-size-50">
                           <md-field>
                             <label for="age">År studeret</label>
                             <md-input
@@ -54,10 +54,7 @@
                               name="aarStudert"
                               v-model="aarStudert"
                             />
-                       
                           </md-field>
-
-                          
                         </div>
                       </div>
                     </form>
@@ -89,8 +86,8 @@ export default {
       mand: 0,
       kvinde: 1,
       gender: null,
-      age : null,
-      aarStudert : null
+      age: null,
+      aarStudert: null
     };
   },
   methods: {
