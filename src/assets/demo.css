@@ -339,3 +339,6 @@
   .md-ripple > span {
       position: relative!important;
   }
+  .md-field+.md-has-textarea:not(.md-autogrow){
+      margin-top:0;
+  }

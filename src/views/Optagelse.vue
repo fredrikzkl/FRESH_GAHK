@@ -11,15 +11,6 @@
                 <div class="md-layout">
                   <div class="md-layout-item md-size-50 md-small-size-100 ml-auto">
 
-                  </div>
-                  <!--Selve Formen-->
-                  <div class="md-layout-item md-size-40 md-medium-size-50 md-small-size-100 mr-auto">
-
-                  </div>                  
-                  </div>
-                  
-                  </form>
-                   
                        <md-field>
                         <label>Fulde Navn</label>
                         <md-input v-model="type"></md-input>
@@ -61,7 +52,7 @@
                         </div>
                       </div>
 
-                      <md-field>
+                       <md-field>
                         <label for="university">Universitet:</label>
                         <md-select class="mdb-select" v-model="unviersity" name="universitet" id="universitet">
                           <md-option value="AU">AU - Aarhus Universitetet</md-option>
@@ -71,10 +62,15 @@
                           <md-option value="KU">KU - Københavns Universitetet</md-option>
                           <md-option value="RUC">RUC - Roskilde Universitetet</md-option>
                           <md-option value="SDU">SDU - Syddansk Universitetet</md-option>
-                          <md-option value="Annet">Annet</md-option>
+                          <md-option value="Andet">Andet</md-option>
                         </md-select>
                       </md-field>
 
+
+                  </div>
+                  <!--Selve Formen-->
+                  <div class="md-layout-item md-size-40 md-medium-size-50 md-small-size-100 mr-auto">
+                      
                       <md-field>
                         <label>Studieretning</label>
                         <md-input v-model="type"></md-input>
@@ -95,10 +91,17 @@
 
                       <md-field>
                         <label>Kort motivation</label>
-                        <md-textarea v-model="textarea" md-counter="500" maxlength="500"></md-textarea>
+                        <md-textarea v-model="textarea" md-counter="500" maxlength="500" style="height:130px"></md-textarea>
                       </md-field>
-                      <md-button class="md-raised md-primary">Send</md-button>
+                      <br>
 
+                  </div>                  
+                  </div>
+                                        <md-button class="md-raised md-primary">Send</md-button>
+
+                  </form>
+                   
+                     
                     
                 </div>
               </div>
