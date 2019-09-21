@@ -332,13 +332,25 @@
     margin-right: auto; 
   }
 
+  
   .md-field.md-has-textarea:not(.md-autogrow) .md-textarea{
       padding: 0 0 0 0 !important;
   }
 
-  .md-ripple > span {
-      position: relative!important;
-  }
+
   .md-field+.md-has-textarea:not(.md-autogrow){
       margin-top:0;
+  }
+
+  .opacity-hover:hover{
+    opacity: 1;
+    
+  }
+
+  .opacity-hover{
+    opacity: .5;
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
   }

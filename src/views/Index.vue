@@ -75,7 +75,7 @@ Har du lyst til at bo sammen med studerende fra mange forskellige uddannelser pÃ
                   <md-card class="md-card-plain">
         
                     <h4 class="card-title">
-                      Tradisjon
+                      Tradition
                       <br />
                     </h4>
 

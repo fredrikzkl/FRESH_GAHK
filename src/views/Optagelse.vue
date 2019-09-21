@@ -1,108 +1,153 @@
 <template>
   <div class="wrapper">
     <div class="section page-header header-filter" :style="headerStyle">
-      <div class="container">
-        <div class="md-layout">
-          <div class="md-layout-item md-size-80 md-small-size-100 mx-auto text-center">
+      <div class="container ">
+        <div class="md-layout  ">
+          <div class="md-layout-item md-size-80 md-small-size-100 mx-auto text-center opacity-hover {'bounce animated': animated}" @animationend="animated = false">
             <div class="md-card md-card md-card-signup md-theme-default">
               <div class="md-card-content">
-                <h2 class="card-title text-center">Optagelse</h2>
-                    <form>
-                <div class="md-layout">
-                  <div class="md-layout-item md-size-50 md-small-size-100 ml-auto">
-
-                       <md-field>
-                        <label>Fulde Navn</label>
-                        <md-input v-model="type"></md-input>
-                      </md-field>
-                      <md-field>
-                        <label>Email</label>
-                        <md-input v-model="type"></md-input>
-                      </md-field>
-
-                      <div class="md-form-group" slot="radios">
-                        <!--<i class="fas fa-venus-mars"></i>-->
-                        <md-radio v-model="gender" :value="mand">Mand</md-radio>
-                        <md-radio v-model="gender" :value="kvinde">Kvinde</md-radio>
-                      </div>
-                      <div class="md-layout">
-                        <div class="md-layout-item md-size-50">
-                          <md-field>
-                            <label for="age">Alder</label>
-                            <md-input
-                              type="number"
-                              id="age"
-                              name="age"
-                              autocomplete="age"
-                              v-model="age"
-                            />
-                          </md-field>
-                        </div>
-
-                        <div class="md-layout-item md-size-50">
-                          <md-field>
-                            <label for="age">År studeret</label>
-                            <md-input
-                              type="number"
-                              id="aarStudert"
-                              name="aarStudert"
-                              v-model="aarStudert"
-                            />
-                          </md-field>
-                        </div>
-                      </div>
-
-                       <md-field>
-                        <label for="university">Universitet:</label>
-                        <md-select class="mdb-select" v-model="unviersity" name="universitet" id="universitet">
-                          <md-option value="AU">AU - Aarhus Universitetet</md-option>
-                          <md-option value="AAU">AAU - Aalborg Universitetet</md-option>
-                          <md-option value="CBS">CBS - Copenhagen Buisness School</md-option>
-                          <md-option value="DTU">DTU - Danmarks Tekniske Universitet</md-option>
-                          <md-option value="KU">KU - Københavns Universitetet</md-option>
-                          <md-option value="RUC">RUC - Roskilde Universitetet</md-option>
-                          <md-option value="SDU">SDU - Syddansk Universitetet</md-option>
-                          <md-option value="Andet">Andet</md-option>
-                        </md-select>
-                      </md-field>
-
-
+               
+                <div id="description-content">
+                   <h2 class="card-title text-center">Optagelse</h2>
+                <!-- Description CONTENT-->
+                  <div class="md-layout" style="text-align:left">
+                    <div class="md-layout-item md-size-50 md-small-size-100 ml-auto">
+                      <h3>Ansøgningsprocess</h3>
+                      <p>
+                        Indstillingen består af fire beboere på kollegiet, der varetager kontakten til potentielle nye beboere. Gruppen står for rundvisning og eventuel optagelse på baggrund af indsendte ansøgninger.
+                        Første skridt er at se, om man opfylder kriterierne for at søge ind på kollegiet. Derefter kan man booke en rundvisning ved at udfylde formularen til højre. Indstillingen vil herefter kontakte dig med henblik på en rundvisning, når der er udsigt til ledige værelser. På rundvisningen kan du få et bedre indtryk af husets atmosfære, værelserne og de mange traditioner, som vi værner om.
+                        Efter rundvisningen sender vi dig et ansøgningsskema, som du kan udfylde med en motiveret ansøgning, hvis du synes om stedet og kunne tænke dig at bo sammen med os.
+                      </p>
+                    </div>
+                    <div
+                      class="md-layout-item md-size-50 md-medium-size-50 md-small-size-100 mr-auto"
+                    >
+                      <h3>Kriterier</h3>
+                      <p>
+                        Vi modtager ansøgninger fra studerende der er påbegyndt 3. semester på en længere videregående uddannelse såsom DTU, KU, SDU, AU, AAU, RUC, CBS, KA og lignende.
+                        2/3 af værelserne er forbeholdt studerende ved Danmarks Tekniske Universitet, hvorfor der i perioder kun kan optages DTU-studerende.
+                        Vi foretrækker, at ansøgere er dansktalende, da det vil gøre det nemmere for alumnen at deltage i kollegielivet.
+                      </p>
+                    </div>
                   </div>
-                  <!--Selve Formen-->
-                  <div class="md-layout-item md-size-40 md-medium-size-50 md-small-size-100 mr-auto">
-                      
-                      <md-field>
-                        <label>Studieretning</label>
-                        <md-input v-model="type"></md-input>
-                      </md-field>
+                  <md-button @click="toggleForm" class="md-raised md-primary">Hent ansøgningsskema</md-button>
+                </div>
+                <!-- FORM CONTENT-->
+                <div id="form-content">
+                  
+
+                  <md-button @click="toggleDescription" class="md-icon-button md-primary" style="float:left;">
+                    <md-icon>arrow_back</md-icon>
+                  </md-button>
+                  <h2 class="card-title text-center">Ansøgning om rundvisning</h2>
+
+                <!-- Description CONTENT-->
+                  <form>
+                    <div class="md-layout">
+                      <div class="md-layout-item md-size-50 md-small-size-100 ml-auto">
+                        <md-field>
+                          <label>Fulde Navn</label>
+                          <md-input v-model="type"></md-input>
+                        </md-field>
+                        <md-field>
+                          <label>Email</label>
+                          <md-input v-model="type"></md-input>
+                        </md-field>
+
+                        <div class="md-form-group" slot="radios">
+                          <!--<i class="fas fa-venus-mars"></i>-->
+                          <md-radio v-model="gender" :value="mand">Mand</md-radio>
+                          <md-radio v-model="gender" :value="kvinde">Kvinde</md-radio>
+                        </div>
+                        <div class="md-layout">
+                          <div class="md-layout-item md-size-50">
+                            <md-field>
+                              <label for="age">Alder</label>
+                              <md-input
+                                type="number"
+                                id="age"
+                                name="age"
+                                autocomplete="age"
+                                v-model="age"
+                              />
+                            </md-field>
+                          </div>
+
+                          <div class="md-layout-item md-size-50">
+                            <md-field>
+                              <label for="age">År studeret</label>
+                              <md-input
+                                type="number"
+                                id="aarStudert"
+                                name="aarStudert"
+                                v-model="aarStudert"
+                              />
+                            </md-field>
+                          </div>
+                        </div>
 
                         <md-field>
-                        <label for="heardAbout">Hvorfra har du høt om kollegiet?</label>
-                        <md-select v-model="heardAbout" name="horte-om" id="horte-om">
-                          <md-option value="">På sociale medier (Facebook, Instagram)</md-option>
-                          <md-option value="">På en hjemmeside</md-option>
-                          <md-option value="">Fra beboere der var på mit studie for at fortælle om kollegiet</md-option>
-                          <md-option value="">Annonce i avis</md-option>
-                          <md-option value="">Fået anbefalet af en jeg kender</md-option>
-                          <md-option value="">Set en plakat</md-option>
-                          <md-option value="">Selv fundet frem til det</md-option>
-                        </md-select>
-                      </md-field>
+                          <label for="university">Universitet:</label>
+                          <md-select
+                            class="mdb-select"
+                            v-model="unviersity"
+                            name="universitet"
+                            id="universitet"
+                          >
+                            <md-option value="AU">AU - Aarhus Universitetet</md-option>
+                            <md-option value="AAU">AAU - Aalborg Universitetet</md-option>
+                            <md-option value="CBS">CBS - Copenhagen Buisness School</md-option>
+                            <md-option value="DTU">DTU - Danmarks Tekniske Universitet</md-option>
+                            <md-option value="KU">KU - Københavns Universitetet</md-option>
+                            <md-option value="RUC">RUC - Roskilde Universitetet</md-option>
+                            <md-option value="SDU">SDU - Syddansk Universitetet</md-option>
+                            <md-option value="Andet">Andet</md-option>
+                          </md-select>
+                        </md-field>
+                      </div>
+                      <!--Selve Formen-->
+                      <div
+                        class="md-layout-item md-size-50 md-medium-size-50 md-small-size-100 mr-auto"
+                      >
+                        <md-field>
+                          <label>Studieretning</label>
+                          <md-input v-model="type"></md-input>
+                        </md-field>
 
-                      <md-field>
-                        <label>Kort motivation</label>
-                        <md-textarea v-model="textarea" md-counter="500" maxlength="500" style="height:130px"></md-textarea>
-                      </md-field>
-                      <br>
+                        <md-field>
+                          <label for="heardAbout">Hvorfra har du høt om kollegiet?</label>
+                          <md-select
+                            class="mdb-select"
+                            v-model="heardAbout"
+                            name="horte-om"
+                            id="horte-om"
+                          >
+                            <md-option value>På sociale medier (Facebook, Instagram)</md-option>
+                            <md-option value>På en hjemmeside</md-option>
+                            <md-option
+                              value
+                            >Fra beboere der var på mit studie for at fortælle om kollegiet</md-option>
+                            <md-option value>Annonce i avis</md-option>
+                            <md-option value>Fået anbefalet af en jeg kender</md-option>
+                            <md-option value>Set en plakat</md-option>
+                            <md-option value>Selv fundet frem til det</md-option>
+                          </md-select>
+                        </md-field>
 
-                  </div>                  
-                  </div>
-                                        <md-button class="md-raised md-primary">Send</md-button>
-
+                        <md-field>
+                          <label>Kort motivation</label>
+                          <md-textarea
+                            v-model="textarea"
+                            md-counter="500"
+                            maxlength="500"
+                            style="height:130px"
+                          ></md-textarea>
+                        </md-field>
+                        <br />
+                      </div>
+                    </div>
+                    <md-button class="md-raised md-primary">Send</md-button>
                   </form>
-                   
-                     
-                    
                 </div>
               </div>
             </div>
@@ -115,6 +160,7 @@
 
 <script>
 import { LoginCard, Modal } from "@/components";
+import $ from "jquery";
 
 export default {
   components: {
@@ -131,18 +177,34 @@ export default {
       kvinde: 1,
       gender: null,
       age: null,
-      aarStudert: null
+      aarStudert: null,
+      heardAbout: ""
     };
   },
   methods: {
     classicModalHide() {
       this.classicModal = false;
+    },
+    toggleForm() {
+      $("#description-content").hide();
+      $("#form-content").show();
+      this.animate();
+    },
+    toggleDescription() {
+      $("#form-content").hide();
+      $("#description-content").show();
+    },
+    animate(){
+      this.animate = true;
     }
+  },
+  mounted: function() {
+    this.toggleDescription();
   },
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/profile_city.jpg")
+      default: require("@/assets/img/optagelse/header.jpg")
     }
   },
   computed: {
@@ -154,5 +216,6 @@ export default {
   }
 };
 </script>
+
 
 <style lang="css"></style>

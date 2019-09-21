@@ -15,8 +15,8 @@
           </li>
           <li>
             <a href="">
-               <i class="fas fa-envelope"></i>
-               Kontakt os
+               <a href="mailto:indstilling@gahk.dk?Subject=Hendvendelse fra hjemmesiden" target="_top">               <i class="fas fa-envelope"></i>
+ Kontakt os</a>
             </a>
           </li>
         </ul>
