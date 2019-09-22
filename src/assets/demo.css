@@ -341,7 +341,7 @@
   .md-field+.md-has-textarea:not(.md-autogrow){
       margin-top:0;
   }
-
+/*
   .opacity-hover:hover{
     opacity: 1;
     
@@ -354,3 +354,4 @@
     -webkit-transition: opacity .5s ease-out;
     -o-transition: opacity .5s ease-out;
   }
+*/
