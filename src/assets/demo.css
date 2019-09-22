@@ -333,14 +333,9 @@
   }
 
   
-  .md-field.md-has-textarea:not(.md-autogrow) .md-textarea{
-      padding: 0 0 0 0 !important;
-  }
 
 
-  .md-field+.md-has-textarea:not(.md-autogrow){
-      margin-top:0;
-  }
+  
 /*
   .opacity-hover:hover{
     opacity: 1;
