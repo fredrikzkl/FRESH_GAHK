@@ -23,11 +23,13 @@
               >Et traditionsrigt, socialt og skønhamrende dejligt kollegium i hjertet af København.</h4>
             </div>
           </div>
-          <vue-plyr>
-          <video id="promo-vid" poster="poster.png" src="video.mp4" autoplay="true" muted="true">
+          <div  @click="unmuteVid">
+          <vue-plyr ref="plyr">
+          <video id="promo-vid" poster="poster.png" src="video.mp4" v-on:click="unmuteVid">
             <source src="https://gahk.dk/public/image/gahk_promo_web.mp4" type="video/mp4" size="720">
           </video>
           </vue-plyr>
+          </div>
           <div class="md-layout" >
             <div class="md-layout-item md-size-66 mx-auto md-small-size-100">
             </div>
@@ -106,7 +108,11 @@ export default {
   },
   data() {
     return {
-      leafShow: false
+      leafShow: false,
+      videoOptions :  {
+          autoplay : true,
+          muted : true
+      }
     };
   },
   methods: {
@@ -116,6 +122,9 @@ export default {
       } else {
         this.leafShow = true;
       }
+    },
+    unmuteVid(){
+      this.player.muted = false;
     }
   },
   computed: {
@@ -129,14 +138,16 @@ export default {
         backgroundImage: `url(${this.signup})`
       };
     },
-    player() {
-      return this.$refs.plyr.player;
+    player () {
+       return this.$refs.plyr.player 
     }
+
   },
   mounted() {
     this.leafActive();
     window.addEventListener("resize", this.leafActive);
-   
+    this.player.play();
+    this.player.muted = true;
    
   },
   beforeDestroy() {
